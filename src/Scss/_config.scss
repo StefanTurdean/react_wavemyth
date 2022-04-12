@@ -1,0 +1,11 @@
+$navBack: #141922;
+$descriptionColor: #2d333d;
+$backGroundColor: #272b35;
+$border: 1px solid #181d26;
+$textColor: #a9b5cc;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

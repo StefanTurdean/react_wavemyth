@@ -1,0 +1,38 @@
+@use "../../Scss/config";
+
+.NavBar {
+  background-color: config.$navBack;
+  @include config.flexCenter;
+  min-height: 60px;
+
+  .NavMain {
+    width: 55%;
+    @include config.flexCenter;
+    justify-content: space-between;
+
+    .title {
+      font-weight: 400;
+      font-size: 35px;
+    }
+
+    .NavContainer {
+      @include config.flexCenter;
+      font-weight: 400;
+      font-size: 1rem;
+      margin-left: 40px;
+      img {
+        height: 24px;
+      }
+
+      a,
+      span {
+        margin: 0 5px;
+        align-content: center;
+        text-decoration: none;
+      }
+    }
+    .Cart {
+      margin-left: auto;
+    }
+  }
+}
