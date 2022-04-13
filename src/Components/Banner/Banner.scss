@@ -3,7 +3,7 @@
 .bannerContainer {
   @include config.flexCenter;
   justify-content: space-evenly;
-  padding: 0 19%;
+  padding: 0 18.5%;
 
   margin-top: 60px;
 
@@ -40,7 +40,7 @@
   .enjoyContainer {
     background-color: config.$backGroundColor;
     border: config.$border;
-    padding: 22px 65px;
+    padding: 15px 55px;
 
     span {
       font-weight: 700;
