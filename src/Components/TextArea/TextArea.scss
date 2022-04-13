@@ -1,0 +1,44 @@
+@use "../../Scss/config";
+
+.bigTextArea {
+  @include config.flexCenter;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-top: 70px;
+  padding: 0 22.5%;
+
+  span:first-letter {
+    font-weight: 700;
+  }
+  span {
+    font-size: 29.71px;
+  }
+
+  .line {
+    width: 529px;
+    border-top: 1px solid #3a424e;
+    margin: 1rem 0;
+  }
+
+  p {
+    max-width: 700px;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: left;
+    margin: 1rem 0rem;
+  }
+
+  .checkOutBtn {
+    margin: 1rem 0;
+    background-color: config.$btnColor;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px 22px;
+    line-height: 18.38px;
+    font-size: 16px;
+  }
+}

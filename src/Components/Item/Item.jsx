@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import "./Item.scss";
-import ItemsList from "./ItemsList";
+import itemsList from "./ItemsList";
 
 export const Item = (props) => {
   let [index, setIndex] = useState(0);
 
   let addToCart = {
-    planetName: ItemsList[index].planetName,
-    planetDescription: ItemsList[index].planetDescriptionOne,
-    planetPrice: ItemsList[index].planetPrice,
+    planetName: itemsList[index].planetName,
+    planetDescription: itemsList[index].planetDescriptionOne,
+    planetPrice: itemsList[index].planetPrice,
   };
 
   const addIndex = () => {
-    if (ItemsList[index + 1] !== undefined) {
+    if (itemsList[index + 1] !== undefined) {
       setIndex(index + 1);
     }
   };
 
   const subIndex = () => {
-    if (ItemsList[index - 1] !== undefined) {
+    if (itemsList[index - 1] !== undefined) {
       setIndex(index - 1);
     }
   };
@@ -31,26 +31,26 @@ export const Item = (props) => {
       <div className="itemMain">
         <div
           className="imgContainer"
-          style={{ backgroundImage: "url(/img/background1.png)" }}
+          style={{ backgroundImage: itemsList[index].planetBackground }}
         >
           <div className="textContainer">
             <p>
-              <b>{ItemsList[index].planetName.toLocaleUpperCase()}</b>
+              <b>{itemsList[index].planetName.toLocaleUpperCase()}</b>
             </p>
-            <p>{ItemsList[index].planetSysten}</p>
-            <p>{ItemsList[index].planetDistance}</p>
-            <p>{ItemsList[index].planetPopulation}</p>
+            <p>{itemsList[index].planetSysten}</p>
+            <p>{itemsList[index].planetDistance}</p>
+            <p>{itemsList[index].planetPopulation}</p>
           </div>
         </div>
         <div className="descriptionContainer">
           <span className="descPlanetName desc">
-            {ItemsList[index].planetName}
+            {itemsList[index].planetName}
           </span>
-          <p className="desc">{ItemsList[index].planetDescriptionOne}</p>
-          <p className="desc">{ItemsList[index].planetDescriptionTwo}</p>
+          <p className="desc">{itemsList[index].planetDescriptionOne}</p>
+          <p className="desc">{itemsList[index].planetDescriptionTwo}</p>
           <div className="buyContainer">
             <div className="priceContainer">
-              <p className="price">{ItemsList[index].planetPrice} €</p>
+              <p className="price">{itemsList[index].planetPrice} €</p>
               <p>one way ticket</p>
             </div>
             <button className="buyBtn" onClick={() => props.setCart(addToCart)}>
