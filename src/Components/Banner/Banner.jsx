@@ -5,18 +5,18 @@ export const Banner = () => {
   return (
     <div className="bannerContainer">
       <div className="packImgContainer">
-        <img src="" alt="" />
-        <p>pack</p>
+        <img src="img/Pack/pack.jpg" alt="oops" />
+        <p className="imgText">pack</p>
       </div>
       <span className="arrow">›</span>
       <div className="rocketImgContainer">
-        <img src="" alt="" />
-        <p>fly</p>
+        <img src="img/Fly/fly.jpg" alt="oh... no" />
+        <p className="imgText">fly</p>
       </div>
       <span>›</span>
-      <div className="lifeImgContainer">
-        <img src="" alt="" />
-        <p>live</p>
+      <div className="leafImgContainer">
+        <img src="img/Live/leaf.jpg" alt="oh YES" />
+        <p className="imgText">live</p>
       </div>
       <span>›</span>
       <div className="enjoyContainer">

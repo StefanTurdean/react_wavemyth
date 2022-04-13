@@ -2,8 +2,56 @@
 
 .bannerContainer {
   @include config.flexCenter;
-  justify-content: space-around;
-  padding: 0 22.5%;
+  justify-content: space-evenly;
+  padding: 0 19%;
 
   margin-top: 60px;
+
+  .imgText:first-letter {
+    font-weight: 700;
+  }
+  .imgText {
+    font-size: 24px;
+  }
+
+  span {
+    font-size: 63px;
+    line-height: 72px;
+  }
+
+  .packImgContainer {
+    img {
+      height: 90px;
+    }
+  }
+
+  .rocketImgContainer {
+    img {
+      height: 90px;
+    }
+  }
+
+  .leafImgContainer {
+    img {
+      height: 90px;
+    }
+  }
+
+  .enjoyContainer {
+    background-color: config.$backGroundColor;
+    border: config.$border;
+    padding: 22px 65px;
+
+    span {
+      font-weight: 700;
+      font-size: 51.22px;
+      line-height: 58.86px;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 22.66px;
+      line-height: 26.04px;
+    }
+  }
 }
