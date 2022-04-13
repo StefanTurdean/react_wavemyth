@@ -1,0 +1,110 @@
+@use "../../Scss/config";
+
+.itemContainer {
+  @include config.flexCenter;
+  min-height: 395px;
+  margin-top: 60px;
+  padding: 0 18.5%;
+
+  .itemMain {
+    @include config.flexCenter;
+    width: 100%;
+    height: 100%;
+
+    border: config.$border;
+    border-radius: 10px;
+    background-color: config.$descriptionColor;
+
+    .imgContainer {
+      flex: 3;
+
+      @include config.flexCenter;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      height: 100%;
+
+      .textContainer {
+        @include config.flexCenter;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 15px;
+      }
+    }
+
+    .descriptionContainer {
+      flex: 1.2;
+
+      @include config.flexCenter;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      height: 100%;
+      padding: 15px 15px;
+
+      .descPlanetName {
+        font-size: 30px;
+      }
+
+      .descPlanetName:first-letter {
+        font-weight: 700;
+      }
+
+      .desc {
+        max-width: 210px;
+        margin-top: 1rem;
+        text-align: left;
+        line-height: 18px;
+      }
+
+      .buyContainer {
+        @include config.flexCenter;
+        background-color: config.$backGroundColor;
+
+        border: config.$border;
+        border-radius: 10px;
+
+        width: 100%;
+        margin-top: auto;
+        padding: 10px;
+
+        .priceContainer {
+          p {
+            margin: 0;
+            font-size: 13.5px;
+            text-align: start;
+          }
+          .price {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 35px;
+          }
+        }
+
+        .buyBtn {
+          margin-left: auto;
+          background-color: config.$btnColor;
+          color: #ffffff;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          padding: 8px 17px;
+        }
+      }
+    }
+  }
+
+  .sideBtn {
+    @include config.flexCenter;
+
+    margin: 15px;
+    height: 50px;
+    width: 50px;
+    font-size: 60px;
+    background-color: config.$backGroundColor;
+    border: config.$border;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

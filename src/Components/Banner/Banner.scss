@@ -1,0 +1,9 @@
+@use "../../Scss/config";
+
+.bannerContainer {
+  @include config.flexCenter;
+  justify-content: space-around;
+  padding: 0 22.5%;
+
+  margin-top: 60px;
+}
